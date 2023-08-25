@@ -1,0 +1,10 @@
+.title {
+  @include font(30px, 700);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.item-title {
+  @include font(18px, 700);
+  text-align: center;
+}
