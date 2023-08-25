@@ -13,16 +13,13 @@
   }
 
   &__official {
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 500;
+    @include font(12px, 500, #fff);
     text-align: center;
     padding-right: 92px;
     & span {
       display: block;
       margin-top: 5px;
-      font-size: 18px;
-      font-weight: 700;
+      @include font(18px, 700, #fff);
     }
   }
 
@@ -35,9 +32,7 @@
 
   &__phone {
     display: block;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 470;
+    @include font(18px, 700, #fff);
     &:hover {
       color: $hover-color;
       text-decoration: none;

@@ -4,9 +4,7 @@
   border: none;
   border-radius: 5px;
   background-color: $main-color;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 500;
+  @include font(12px, 500, #fff);
   text-transform: uppercase;
 
   &_main {
