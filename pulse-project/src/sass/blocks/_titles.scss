@@ -2,6 +2,12 @@
   @include font(30px, 700);
   text-transform: uppercase;
   text-align: center;
+
+  &_left {
+    @include font(36px, 700, #fff);
+    line-height: 1.25;
+    text-align: left;
+  }
 }
 
 .item-title {
