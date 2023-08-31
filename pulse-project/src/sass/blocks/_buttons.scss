@@ -6,6 +6,10 @@
   background-color: $main-color;
   @include font(12px, 500, #fff);
   text-transform: uppercase;
+  transition: all 0.5s;
+  &:hover {
+    box-shadow: 3px 3px 20px $main-color;
+  }
 
   &_main {
     margin-top: 60px;
