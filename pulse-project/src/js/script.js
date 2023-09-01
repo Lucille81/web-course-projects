@@ -84,6 +84,10 @@ $(document).ready(function () {
   $('#consultation-form').validate(validateRules);
   $('#consultation form').validate(validateRules);
   $('#order form').validate(validateRules);
+
+  // --- Masked Phone Input ---
+
+  $('input[name="phone"]').mask('+7 (999) 999-9999');
 });
 
 // --- Switch tabs (Vanilla JavaScript) ---
