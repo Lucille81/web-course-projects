@@ -98,6 +98,8 @@ $(document).ready(function () {
       $('.pageup').fadeOut('slow');
     }
   });
+
+  new WOW().init();
 });
 
 // --- Switch tabs (Vanilla JavaScript) ---
