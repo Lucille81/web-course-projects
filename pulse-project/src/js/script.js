@@ -88,6 +88,16 @@ $(document).ready(function () {
   // --- Masked Phone Input ---
 
   $('input[name="phone"]').mask('+7 (999) 999-9999');
+
+  // --- Scroll Pageup ---
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1600) {
+      $('.pageup').fadeIn('slow');
+    } else {
+      $('.pageup').fadeOut('slow');
+    }
+  });
 });
 
 // --- Switch tabs (Vanilla JavaScript) ---
