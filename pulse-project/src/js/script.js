@@ -60,7 +60,9 @@ $(document).ready(function () {
 
   $('.button_mini').each(function (i) {
     $(this).on('click', function () {
-      $('.modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+      $('.modal__descr_ordered').text(
+        $('.catalog-item__subtitle').eq(i).text()
+      );
       $('.overlay, #order').fadeIn();
     });
   });
