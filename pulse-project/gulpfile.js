@@ -44,10 +44,6 @@ gulp.task('scripts', function () {
   return gulp.src('./src/js/**/*.js').pipe(gulp.dest('./dist/js'));
 });
 
-gulp.task('scripts', function () {
-  return gulp.src('./src/js/**/*.js').pipe(gulp.dest('./dist/js'));
-});
-
 gulp.task('fonts', function () {
   return gulp.src('./src/fonts/**/*').pipe(gulp.dest('./dist/fonts'));
 });
