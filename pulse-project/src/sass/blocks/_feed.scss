@@ -1,0 +1,39 @@
+.feed {
+  padding-bottom: 62px;
+
+  &__wrapper {
+    margin-top: 55px;
+    padding: 0 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 92px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+  }
+
+  &__img {
+    max-width: 169px;
+  }
+
+  &__text {
+    .item-title {
+      text-align: left;
+      line-height: 1;
+    }
+  }
+
+  &__subtitle {
+    @include font(14px, 500, #646464);
+  }
+
+  &__descr {
+    margin-top: 10px;
+    @include font(16px, 300);
+    line-height: 1.25;
+  }
+}

@@ -1,0 +1,62 @@
+.footer {
+  position: relative;
+  height: 630px;
+
+  &__info {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 460px;
+    height: 270px;
+    padding: 48px 54px 60px;
+    background-color: $main-color;
+  }
+
+  &__address {
+    margin-bottom: 0;
+    @include font(20px, 500, #fff);
+    line-height: 1;
+  }
+
+  &__phone {
+    @include font(20px, 700, #fff);
+    &:hover {
+      color: $hover-color;
+      text-decoration: none;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    &-item {
+      display: block;
+      padding: 10px;
+      width: 50px;
+      height: 50px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      text-align: center;
+      transition: all 0.5s;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      &:hover {
+        border-color: $hover-color;
+        img {
+          filter: brightness(0) saturate(100%) invert(86%) sepia(0%) saturate(60%)
+            hue-rotate(177deg) brightness(103%) contrast(83%);
+        }
+      }
+    }
+  }
+}

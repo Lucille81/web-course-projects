@@ -1,0 +1,43 @@
+@import './libs/bootstrap-reboot.min';
+@import './libs/fonts';
+@import './libs/slick';
+
+@import './base/variables';
+@import './base/mixins';
+@import './base/animations';
+
+@import './blocks/buttons';
+@import './blocks/titles';
+@import './blocks/forms';
+@import './blocks/modal';
+@import './blocks/pageup';
+
+@import './blocks/header';
+@import './blocks/promo';
+@import './blocks/advantages';
+@import './blocks/consultation';
+@import './blocks/carousel';
+@import './blocks/catalog';
+@import './blocks/feed';
+@import './blocks/footer';
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.map {
+  width: 100%;
+  height: 630px;
+  border: 0;
+}
+
+@import './base/media';

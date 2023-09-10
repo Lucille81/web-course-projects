@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 4px;
+
+  &__logo {
+    max-width: 251px;
+    & img {
+      width: 100%;
+    }
+  }
+
+  &__official {
+    @include font(12px, 500, #fff);
+    text-align: center;
+    padding-right: 92px;
+    & span {
+      display: block;
+      margin-top: 5px;
+      @include font(18px, 700, #fff);
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__phone {
+    display: block;
+    @include font(18px, 700, #fff);
+    &:hover {
+      color: $hover-color;
+      text-decoration: none;
+    }
+  }
+}

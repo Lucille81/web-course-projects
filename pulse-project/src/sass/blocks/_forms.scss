@@ -1,0 +1,23 @@
+.feed-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+
+  input {
+    height: 50px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+    &::placeholder {
+      @include font(14px, 300, #4b4b4b);
+    }
+  }
+
+  &_mt25 {
+    margin-top: 25px;
+  }
+}
