@@ -59,6 +59,10 @@ gulp.task('images', function () {
     .pipe(gulp.dest('./dist/img'));
 });
 
+gulp.task('mailer', function () {
+  return gulp.src('./src/mailer/**/*').pipe(gulp.dest('./dist/mailer'));
+});
+
 gulp.task(
   'default',
   gulp.parallel(
@@ -69,6 +73,7 @@ gulp.task(
     'scripts',
     'fonts',
     'icons',
-    'images'
+    'images',
+    'mailer'
   )
 );
