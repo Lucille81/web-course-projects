@@ -1,0 +1,23 @@
+@mixin font($size, $height: normal, $weight: bold) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}
+
+@mixin before_circle($left: 0, $top: 50%, $x: 0, $y: -50%) {
+  position: relative;
+  z-index: 0;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: $left;
+    top: $top;
+    transform: translate($x, $y);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: $main-color;
+  }
+}

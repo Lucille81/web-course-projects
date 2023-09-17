@@ -1,0 +1,14 @@
+.title {
+  &_fz14 {
+    @include font(14px, 21px);
+  }
+  &_fz16 {
+    @include font(16px, 24px);
+  }
+  &_fz36 {
+    @include font(36px, 60px);
+  }
+  &_fz48 {
+    @include font(48px, 60px);
+  }
+}
