@@ -1,5 +1,4 @@
 .about {
-  min-height: 100vh;
   padding-top: 120px;
 
   &__wrapper {
@@ -20,7 +19,7 @@
   &__descr {
     padding-top: 6px;
     .divider {
-      margin-top: 0;
+      margin: 0;
     }
   }
 
