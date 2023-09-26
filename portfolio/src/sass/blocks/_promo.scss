@@ -12,11 +12,6 @@
   &__subtitle {
     padding-left: 10px;
     @include before_circle;
-    // &::before {
-    //   left: -10px;
-    //   top: 50%;
-    //   transform: translate(0%, -50%);
-    // }
   }
 
   &__btns {
