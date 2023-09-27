@@ -1,0 +1,32 @@
+.portfolio {
+  padding-top: 126px;
+
+  &__wrapper {
+    margin-top: 60px;
+    display: grid;
+    grid-template: repeat(auto-fill, 280px) / repeat(auto-fill, 280px);
+    justify-content: center;
+    gap: 5px;
+  }
+
+  &__item {
+    transition: all 0.6s;
+    filter: opacity(60%);
+
+    &.vertical {
+      grid-area: 1/4/3/5;
+    }
+
+    &.horizontal {
+      grid-area: 2/2/3/4;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    &:hover {
+      filter: none;
+    }
+  }
+}

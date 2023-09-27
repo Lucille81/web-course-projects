@@ -12,4 +12,14 @@
   &_fz48 {
     @include font(48px, 60px);
   }
+  &__section-title {
+    padding-top: 6px;
+    @include before_circle(50%, 0, -50%, 0);
+    text-align: center;
+  }
+
+  &__section-subtitle {
+    padding-top: 6px;
+    text-align: center;
+  }
 }
