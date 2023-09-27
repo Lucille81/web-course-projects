@@ -1,0 +1,89 @@
+.skills {
+  padding-top: 120px;
+
+  &__title {
+    padding-top: 6px;
+    @include before_circle(50%, 0, -50%, 0);
+    text-align: center;
+  }
+
+  &__subtitle {
+    padding-top: 6px;
+    text-align: center;
+  }
+
+  &__items {
+    margin-top: 60px;
+    display: grid;
+    grid-template: repeat(auto-fill, minmax(270px, auto)) / repeat(
+        auto-fill,
+        270px
+      );
+    justify-content: center;
+    gap: 13px;
+  }
+
+  &__item {
+    padding: 30px 30px 25px;
+    border: 1px solid #000;
+
+    &-img {
+      height: 65px;
+      line-height: 65px;
+      img {
+        max-height: 65px;
+      }
+    }
+
+    &-title {
+      margin-top: 20px;
+    }
+
+    &-descr {
+      margin-top: 15px;
+      margin-bottom: 0;
+      @include font(12px, 18px, 500);
+    }
+  }
+
+  &__ratings {
+    margin-top: 128px;
+    display: grid;
+    grid-template: repeat(auto-fill, 60px) / repeat(
+        auto-fill,
+        minmax(300px, 350px)
+      );
+    justify-content: space-around;
+    column-gap: 45px;
+    row-gap: 38px;
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-title {
+      padding-left: 13px;
+      @include before_circle;
+    }
+
+    &-percent {
+      @include font(14px, 21px, 500);
+    }
+
+    &-line {
+      margin-top: 27px;
+      width: 100%;
+      height: 14px;
+      border-radius: 4px;
+      background: #e8e4de;
+      span {
+        display: block;
+        height: 100%;
+        border-radius: 4px;
+        background: $main-color;
+      }
+    }
+  }
+}
