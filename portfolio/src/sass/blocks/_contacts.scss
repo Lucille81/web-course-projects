@@ -1,0 +1,96 @@
+.contacts {
+  padding: 120px 0 90px;
+
+  &__wrapper {
+    padding-left: 50px;
+    padding-right: 35px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    column-gap: 70px;
+  }
+
+  &__photo {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__descr {
+    padding-top: 6px;
+    .divider {
+      margin: 0;
+    }
+  }
+
+  &__title {
+    padding-left: 12px;
+    @include before_circle;
+  }
+
+  &__subtitle {
+    margin-top: 6px;
+  }
+
+  &__text {
+    margin-top: 20px;
+  }
+
+  &__socials {
+    margin-top: 20px;
+    display: flex;
+    gap: 25px;
+    img {
+      max-width: 30px;
+      max-height: 30px;
+    }
+  }
+
+  &__form {
+    margin-top: 30px;
+    display: grid;
+    grid-template: 45px minmax(190px, auto) 45px / repeat(2, 280px);
+    row-gap: 30px;
+    column-gap: 25px;
+
+    input,
+    textarea,
+    label {
+      @include font(12px, 18px, 500);
+    }
+
+    label {
+      margin: 0;
+      padding: 0 8px;
+      position: absolute;
+      top: -9px;
+      left: 12px;
+      background: #fff;
+    }
+  }
+
+  &__input {
+    position: relative;
+    input {
+      padding: 12.5px 20px;
+      width: 100%;
+      border: 1px solid #000;
+    }
+  }
+
+  &__textarea {
+    grid-column: 1/3;
+    position: relative;
+    textarea {
+      padding: 12.5px 20px;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #000;
+    }
+  }
+
+  &__btn {
+    justify-self: start;
+    border: none;
+    @include font(14px, 21px);
+  }
+}
